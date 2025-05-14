@@ -1,12 +1,11 @@
 <?php
     include("../database.php");
 
-    // input'tan gelen bilgileri degiskene atiyorum
+    // I assign the input values to variables
     $username = $_POST["username"];
     $password = $_POST["password"];
 
     if(isset($_POST["register"])) {
-        // Basit örnek kontrol (örneğin boş bırakma durumu)
         if (empty($username) || empty($password)) {
             $errorMessage = "Please fill in all fields.";
         } else {
@@ -40,7 +39,7 @@
             <input type="password" name="password" placeholder="Password" value="">
             <button type="submit" name="register">Create Account</button>
         </form>
-        <!-- Hata veya başarı mesajı -->
+        <!-- error or success messages -->
         <?php if ($errorMessage): ?>
             <div class="errorMessage"><?php echo $errorMessage; ?></div>
         <?php elseif ($successMessage): ?>

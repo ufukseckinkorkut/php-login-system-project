@@ -14,15 +14,12 @@
         session_start();
 
         $errorMessage = '';
-        // input'tan gelen bilgiler
+        // login infos coming from input
         $username = trim($_POST['username']);
         $password = $_POST['password'];
 
-        // kendi minik database bilgilerim hehe
-        /* $usernameData = "ufuk";  
-        $passwordData = "123"; */
 
-        // mysql users tablosundan cektigim bilgiler
+        // mysql users table infos
         $sql = "SELECT * FROM users WHERE username = '$username'";
         $result = mysqli_query($connection, $sql);
 
@@ -37,7 +34,7 @@
         mysqli_close($connection); 
         
 
-        // giris bilgilerini kontrol ettigimiz kisim
+        // the part where I control the login informations 
         if (isset($_POST['login'])) {
             if (empty($username) && empty($password)) {
                 $errorMessage = "Please fill in all fields.";
@@ -62,7 +59,7 @@
             <button type="submit" name="login">Login</button>
             <button type="submit" name="register" style="margin-top:10px;">Create an account</button>
         </form>
-          <!-- Hata mesajını burada gösteriyoruz -->
+          <!-- error message -->
           <?php if ($errorMessage): ?>
             <div class="errorMessage"><?php echo $errorMessage; ?></div>
         <?php endif; ?>

@@ -53,8 +53,8 @@ body {
 
 .logout-btn {
     position: absolute;
-    top: 20px;  /* Üstten 20px mesafe */
-    right: 20px; /* Sağdan 20px mesafe */
+    top: 20px;  
+    right: 20px; 
     padding: 10px 20px;
 
     background-color: #ff4747;
@@ -83,7 +83,7 @@ body {
     font-size: 16px;
     text-align: center;
     width: 100%;
-    max-width: 350px; /* Hata mesajının genişliğini sınırlıyoruz */
+    max-width: 350px; 
     box-sizing: border-box;
     border: 2px solid #d74c4c;
     font-weight: bold;
