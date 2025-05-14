@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #c3cfe2, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c7cfa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #4263eb;
+}
+
+.hello {
+    color: #FF5733;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;  /* Üstten 20px mesafe */
+    right: 20px; /* Sağdan 20px mesafe */
+    padding: 10px 20px;
+
+    background-color: #ff4747;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #d43535;
+}
+
+.memberInfo {
+    color: #FF5733;
+    margin-top: 300px;
+}
+
+.errorMessage {
+    color: #fff;
+    background-color: #ff4d4d;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Hata mesajının genişliğini sınırlıyoruz */
+    box-sizing: border-box;
+    border: 2px solid #d74c4c;
+    font-weight: bold;
+}
+
