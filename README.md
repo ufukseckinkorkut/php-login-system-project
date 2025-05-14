@@ -1,5 +1,7 @@
 # php-login-system-project
-I am learning PHP and this is one of the first projects I made. I used basic PHP codes and mysql database connection. It's been a good practice to revise the things that i've learned so far. 
+I am learning PHP and this is one of the first projects I made. 
+It's a login page which leads you to the logged in page if the login infos are true, or if you don't have an account you basically create an account from the register page. 
+I used basic PHP codes and mysql database connection. It's been a good practice to revise the things that i've learned so far. 
 
 
 💾 Database Info:
